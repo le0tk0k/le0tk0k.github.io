@@ -5,7 +5,7 @@ const siteConfig = {
     github: 'https://github.com/le0tk0k',
     twitter: 'https://twitter.com/le0tk0k',
   },
-  copyright: `© 2021 le0tk0k`,
+  copyright: '© 2021 le0tk0k',
 }
 
 export default siteConfig
