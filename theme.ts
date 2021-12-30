@@ -1,4 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
+import { mode } from '@chakra-ui/theme-tools'
 
 const customTheme = extendTheme({
   config: {},
@@ -27,6 +28,13 @@ const customTheme = extendTheme({
       400: '#A3BE8C',
       500: '#B48EAD',
     },
+  },
+  styles: {
+    global: (props) => ({
+      body: {
+        color: mode('polarNight.100', 'snowStorm.100')(props),
+      },
+    }),
   },
 })
 
