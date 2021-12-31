@@ -14,7 +14,7 @@ import NextLink from 'next/link'
 import siteConfig from 'config/site-config'
 import { GitHubIcon, TwitterIcon } from 'components/icons'
 
-function Header() {
+const Header = () => {
   const bg = useColorModeValue('white', 'polarNight.400')
   const { toggleColorMode: toggleMode } = useColorMode()
   const SwitchIcon = useColorModeValue(MoonIcon, SunIcon)
