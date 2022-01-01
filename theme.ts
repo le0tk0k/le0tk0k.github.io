@@ -33,6 +33,7 @@ const customTheme = extendTheme({
     global: (props) => ({
       body: {
         color: mode('polarNight.100', 'snowStorm.100')(props),
+        background: mode('white', 'polarNight.400')(props),
       },
     }),
   },
