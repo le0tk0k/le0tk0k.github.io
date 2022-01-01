@@ -15,12 +15,11 @@ import siteConfig from 'config/site-config'
 import { GitHubIcon, TwitterIcon } from 'components/icons'
 
 const Header = () => {
-  const bg = useColorModeValue('white', 'polarNight.400')
   const { toggleColorMode: toggleMode } = useColorMode()
   const SwitchIcon = useColorModeValue(MoonIcon, SunIcon)
 
   return (
-    <chakra.header bg={bg} width='full'>
+    <chakra.header w='full'>
       <chakra.div height='4.5rem' mx='auto' maxW='2xl'>
         <Flex w='100%' h='100%' px='6' align='center' justify='space-between'>
           <Box>
@@ -28,6 +27,8 @@ const Header = () => {
               <chakra.a
                 display='block'
                 aria-label='le0tk0k.github.io, Back to homepage'
+                fontSize='lg'
+                fontWeight='black'
               >
                 {siteConfig.siteTitle}
               </chakra.a>
