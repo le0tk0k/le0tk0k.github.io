@@ -37,6 +37,71 @@ const customTheme = extendTheme({
       },
     }),
   },
+  mdx: {
+    title: {
+      mb: '3rem',
+      color: 'frost.400',
+      fontWeight: 'extrabold',
+      fontSize: '1.5rem',
+    },
+    h1: {
+      mt: '2.5rem',
+      mb: '1rem',
+      fontWeight: 'bold',
+      fontSize: '1.4rem',
+    },
+    h2: {
+      mt: '2.5rem',
+      mb: '1rem',
+      fontWeight: 'semibold',
+      fontSize: '1.3rem',
+    },
+    h3: {
+      mt: '2.5rem',
+      mb: '1rem',
+      fontWeight: 'semibold',
+      fontSize: '1.2rem',
+    },
+    p: {
+      mt: '1.25rem',
+      lineHeight: 1.6,
+      'blockquote &': {
+        mt: 0,
+      },
+    },
+    a: {
+      color: 'frost.400',
+      borderBottomStyle: 'dashed',
+      borderBottomWidth: '1px',
+      borderBottomColor: 'frost.400',
+    },
+    hr: {
+      my: '4rem',
+    },
+    ul: {
+      mt: '1.25rem',
+      ml: '1.25rem',
+      'li &': {
+        mt: 0,
+      },
+      'blockquote &': {
+        mt: 0,
+      },
+    },
+    blockquote: {
+      borderLeftWidth: '3px',
+      borderLeftColor: 'frost.400',
+      px: '1.25rem',
+      py: '1rem',
+      my: '1.25rem',
+    },
+    code: {
+      color: 'frost.400',
+      bg: 'rgb(136, 192, 208, 0.15)',
+      px: '1',
+      whiteSpace: 'nowrap',
+    },
+  },
 })
 
 export default customTheme
