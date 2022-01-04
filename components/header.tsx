@@ -15,6 +15,7 @@ const Header = () => {
                 aria-label='le0tk0k.github.io, Back to homepage'
                 fontSize='lg'
                 fontWeight='black'
+                color='aurora.200'
               >
                 {siteConfig.siteTitle}
               </chakra.a>
