@@ -1,5 +1,7 @@
 const siteConfig = {
-  siteTitle: 'le0tk0k.github.io',
+  title: 'le0tk0k.github.io',
+  baseURL: 'https://le0tk0k.github.io',
+  description: "le0tk0k's personal website.",
   author: {
     name: 'le0tk0k',
     github: 'https://github.com/le0tk0k',

@@ -5,10 +5,12 @@ import { serialize } from 'next-mdx-remote/serialize'
 import path from 'path'
 import MDXLayout from 'layouts'
 import { postFilePaths, POSTS_PATH } from 'utils/mdx'
+import Meta from 'components/meta'
 
 export default function PostPage({ source, frontMatter }) {
   return (
     <>
+      <Meta url={'/posts/' + frontMatter.slug} title={frontMatter.title} />
       <MDXLayout frontmatter={frontMatter}>
         <MDXRemote {...source} />
       </MDXLayout>

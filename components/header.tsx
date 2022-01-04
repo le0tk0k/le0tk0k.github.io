@@ -16,7 +16,7 @@ const Header = () => {
                 fontSize='lg'
                 fontWeight='black'
               >
-                {siteConfig.siteTitle}
+                {siteConfig.title}
               </chakra.a>
             </NextLink>
           </Box>

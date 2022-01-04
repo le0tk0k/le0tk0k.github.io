@@ -6,6 +6,7 @@ interface PageContainerProps {
   frontmatter: {
     title: string
     date: string
+    slug: string
   }
   children: React.ReactNode
 }

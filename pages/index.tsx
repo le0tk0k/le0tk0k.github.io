@@ -3,6 +3,7 @@ import path from 'path'
 import fs from 'fs'
 import Container from 'components/container'
 import Post from 'components/post'
+import Meta from 'components/meta'
 import { postFilePaths, POSTS_PATH } from 'utils/mdx'
 
 interface HomeProps {
@@ -11,11 +12,14 @@ interface HomeProps {
 
 const Home = ({ posts }: HomeProps) => {
   return (
-    <Container>
-      {posts.map((post) => (
-        <Post key={post.data.title} {...post} />
-      ))}
-    </Container>
+    <>
+      <Meta url='/' />
+      <Container>
+        {posts.map((post) => (
+          <Post key={post.data.title} {...post} />
+        ))}
+      </Container>
+    </>
   )
 }
 
