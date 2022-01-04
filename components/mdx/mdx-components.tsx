@@ -27,12 +27,12 @@ export const MdxComponents = {
   ),
   th: (props) => (
     <chakra.th
-      color='aurora.200'
+      color='frost.200'
       fontWeight='semibold'
       p={2}
       borderStyle='dashed'
       borderWidth='1px'
-      borderColor='aurora.200'
+      borderColor='frost.200'
       {...props}
     />
   ),
@@ -41,7 +41,7 @@ export const MdxComponents = {
       p={2}
       borderStyle='dashed'
       borderWidth='1px'
-      borderColor='aurora.200'
+      borderColor='frost.200'
       whiteSpace='normal'
       {...props}
     />

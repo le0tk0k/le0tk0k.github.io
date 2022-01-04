@@ -40,12 +40,12 @@ const customTheme = extendTheme({
     title: {
       mb: '.3rem',
       pb: '.5rem',
-      color: 'aurora.200',
+      color: 'frost.200',
       fontWeight: 'extrabold',
       fontSize: '1.5rem',
       borderBottomStyle: 'dashed',
       borderBottomWidth: '1px',
-      borderBottomColor: 'aurora.200',
+      borderBottomColor: 'frost.200',
     },
     h1: {
       mt: '2.5rem',
@@ -73,13 +73,13 @@ const customTheme = extendTheme({
       },
     },
     a: {
-      color: 'aurora.200',
+      color: 'frost.200',
       borderBottomStyle: 'dashed',
       borderBottomWidth: '1px',
-      borderBottomColor: 'aurora.200',
+      borderBottomColor: 'frost.200',
     },
     hr: {
-      bg: 'aurora.200',
+      bg: 'frost.200',
       my: '4rem',
     },
     ul: {
@@ -94,14 +94,14 @@ const customTheme = extendTheme({
     },
     blockquote: {
       borderLeftWidth: '3px',
-      borderLeftColor: 'aurora.200',
+      borderLeftColor: 'frost.200',
       px: '1.25rem',
       py: '1rem',
       my: '1.25rem',
     },
     code: {
-      color: 'aurora.200',
-      bg: 'rgb(208, 135, 112, 0.15)',
+      color: 'frost.200',
+      bg: 'rgb(136, 192, 208, 0.15)',
       px: '1',
       whiteSpace: 'nowrap',
     },

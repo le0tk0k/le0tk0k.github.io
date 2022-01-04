@@ -19,7 +19,7 @@ const PageContainer = (props: PageContainerProps) => {
     <Container>
       <Box mb='4rem'>
         <chakra.h1 apply='mdx.title'>{title}</chakra.h1>
-        <Text color='rgb(208, 135, 112, 0.8)'>{date}</Text>
+        <Text color='rgb(136, 192, 208, 0.8)'>{date}</Text>
       </Box>
       {children}
     </Container>
