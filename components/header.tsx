@@ -1,23 +1,9 @@
-import {
-  Box,
-  chakra,
-  Flex,
-  HStack,
-  Icon,
-  IconButton,
-  Link,
-  useColorMode,
-  useColorModeValue,
-} from '@chakra-ui/react'
-import { SunIcon, MoonIcon } from '@chakra-ui/icons'
+import { Box, chakra, Flex, HStack, Icon, Link } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import siteConfig from 'config/site-config'
 import { GitHubIcon, TwitterIcon } from 'components/icons'
 
 const Header = () => {
-  const { toggleColorMode: toggleMode } = useColorMode()
-  const SwitchIcon = useColorModeValue(MoonIcon, SunIcon)
-
   return (
     <chakra.header w='full'>
       <chakra.div height='4.5rem' mx='auto' maxW='2xl'>
@@ -35,7 +21,7 @@ const Header = () => {
             </NextLink>
           </Box>
           <Flex>
-            <HStack spacing='4' display={{ base: 'none', md: 'flex' }}>
+            <HStack spacing='4' display='flex'>
               <Link
                 isExternal
                 aria-label='Go to le0tk0k GitHub page'
@@ -51,15 +37,6 @@ const Header = () => {
                 <Icon as={TwitterIcon} display='block' w='5' h='5' />
               </Link>
             </HStack>
-            <IconButton
-              fontSize='xl'
-              aria-label='Toggle color mode'
-              variant='ghost'
-              color='current'
-              ml={{ base: '0', md: '2' }}
-              onClick={toggleMode}
-              icon={<SwitchIcon />}
-            />
           </Flex>
         </Flex>
       </chakra.div>
