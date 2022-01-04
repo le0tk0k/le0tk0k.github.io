@@ -1,5 +1,3 @@
-import type { NextPage } from 'next'
-import Link from 'next/link'
 import matter from 'gray-matter'
 import path from 'path'
 import fs from 'fs'
@@ -7,7 +5,11 @@ import Container from 'components/container'
 import Post from 'components/post'
 import { postFilePaths, POSTS_PATH } from 'utils/mdx'
 
-const Home: NextPage = ({ posts }) => {
+interface HomeProps {
+  posts: any
+}
+
+const Home = ({ posts }: HomeProps) => {
   return (
     <Container>
       {posts.map((post) => (
