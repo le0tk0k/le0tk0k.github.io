@@ -39,7 +39,7 @@ const customTheme = extendTheme({
   },
   mdx: {
     title: {
-      mb: '3rem',
+      mb: '.3rem',
       pb: '.5rem',
       color: 'aurora.200',
       fontWeight: 'extrabold',
