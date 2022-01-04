@@ -40,9 +40,13 @@ const customTheme = extendTheme({
   mdx: {
     title: {
       mb: '3rem',
-      color: 'frost.400',
+      pb: '.5rem',
+      color: 'aurora.200',
       fontWeight: 'extrabold',
       fontSize: '1.5rem',
+      borderBottomStyle: 'dashed',
+      borderBottomWidth: '1px',
+      borderBottomColor: 'aurora.200',
     },
     h1: {
       mt: '2.5rem',
@@ -70,12 +74,13 @@ const customTheme = extendTheme({
       },
     },
     a: {
-      color: 'frost.400',
+      color: 'aurora.200',
       borderBottomStyle: 'dashed',
       borderBottomWidth: '1px',
-      borderBottomColor: 'frost.400',
+      borderBottomColor: 'aurora.200',
     },
     hr: {
+      bg: 'aurora.200',
       my: '4rem',
     },
     ul: {
@@ -90,14 +95,14 @@ const customTheme = extendTheme({
     },
     blockquote: {
       borderLeftWidth: '3px',
-      borderLeftColor: 'frost.400',
+      borderLeftColor: 'aurora.200',
       px: '1.25rem',
       py: '1rem',
       my: '1.25rem',
     },
     code: {
-      color: 'frost.400',
-      bg: 'rgb(136, 192, 208, 0.15)',
+      color: 'aurora.200',
+      bg: 'rgb(208, 135, 112, 0.15)',
       px: '1',
       whiteSpace: 'nowrap',
     },
