@@ -1,15 +1,11 @@
 import type { NextPage } from 'next'
-import Header from 'components/header'
-import Footer from 'components/footer'
-import { Box } from '@chakra-ui/react'
+import Container from 'components/container'
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Header />
-      <Box h='100vh' />
-      <Footer />
-    </>
+    <Container>
+      <div></div>
+    </Container>
   )
 }
 
