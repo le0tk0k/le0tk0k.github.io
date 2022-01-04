@@ -1,7 +1,12 @@
 import NextLink from 'next/link'
 import { chakra, Flex, Text } from '@chakra-ui/react'
 
-const Post = ({ data, filePath }) => {
+interface PostProps {
+  data: any
+  filePath: string
+}
+
+const Post = ({ data, filePath }: PostProps) => {
   const { title, date } = data
   return (
     <NextLink
